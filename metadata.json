@@ -1,0 +1,5 @@
+{
+  "name": "Copy of Compressor Ear Trainer - V3",
+  "description": "An interactive game to train your ears for audio compression. It features three training modes (compressor detection, attack, and release), eight difficulty levels, and true volume matching to ensure a fair and effective learning experience.",
+  "requestFramePermissions": []
+}
