@@ -37,10 +37,8 @@ export const useAudioEngine = () => {
         createAudioContext();
         const context = audioContextRef.current!;
         
-        const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(url)}`;
-
         try {
-            const response = await fetch(proxyUrl);
+            const response = await fetch(url, { mode: 'cors' });
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status} for URL ${url}`);
             }
